@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*colours*/
+  --white-colour: #fff;
+  --dark-colour: rgb(2, 4, 7);
+  --secondary-colour-1: rgb(10, 18, 29);
+  --secondary-colour-2: rgb(52, 183, 175);
+  --secondary-colour-3: rgb(22, 30, 41);
+  --secondary-colour-4: rgb(229, 182, 54);
+
+  /*fonts*/
+  --font-family: "Poppins", sans-serif;
+  --font-xl: 3rem;
+  --font-lg: 2.375rem;
+  --font-m: 1.125rem;
+  --font-s: 1rem;
+  --font-xs: 0.78rem;
+}
+
+/*style rule for button */
+.btn {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 300ms ease;
+  outline: none;
+  border-radius: 1.5rem;
+}
+.btn-primary {
+  background-color: var(--white-colour);
+  color: var(--secondary-colour-3);
+}
+.btn-secondary {
+  background-color: var(--secondary-colour-1);
+  color: var(--white-colour);
+  border: 1px solid var(--white-colour);
+}
+.btn--lg {
+  padding: 0.7rem 3rem;
+}
+.btn--small {
+  padding: 0.45rem 1.5rem;
+}
+.btn:hover {
+  background: var(--secondary-colour-2);
+  color: var(--white-colour);
+  border: none;
+}
