@@ -1,0 +1,42 @@
+main {
+  margin-top: 90px;
+}
+
+.news-header {
+  background: radial-gradient(rgb(42, 68, 101), var(--dark-colour));
+  height: 100vh;
+  border: 10px solid red;
+  display: flex;
+  color: var(--white-colour);
+  font-family: var(--font-family);
+}
+
+.header-texts {
+  border: 1px blue solid;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.header-photo {
+  border: 1px green solid;
+  width: 50%;
+  height: 100%;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+  gap: 20px;
+  font-size: var(--font-s);
+}
+
+.header-title {
+  font-size: var(--font-lg);
+  margin-bottom: 55px;
+}
+
+.header-title-2 {
+  font-size: var(--font-lg);
+}
