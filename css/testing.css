@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*section 1*/
+.sec-1 {
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(to right rgba(0, 0, 0, 1) rgba(0, 0, 0, 0));
+  background-image: url(../images/dstv-generic-dstv-stream-launch-kv-banner-bg-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 3rem;
+}
+body {
+  background-color: var(--secondary-colour-1);
+}
+nav {
+  background-color: var(--dark-colour);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding: 0 20px;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--white-colour);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 90px;
+}
+
+.nav-logo {
+  display: inline-block;
+  font-family: var(--font-family);
+  color: var(--white-colour);
+  font-weight: bold;
+}
+
+.nav-logo .main-text {
+  font-size: var(--font-lg);
+}
+
+.nav-logo .sub-text {
+  font-size: var(--font-s);
+  display: block;
+  margin-top: -5px;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  color: var(--white-colour);
+}
+.main-menu li {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  transition: all 300ms ease;
+  gap: 5px;
+  cursor: pointer;
+}
+.main-menu li:hover {
+  background-color: var(--secondary-colour-2);
+}
+.main-menu li a {
+  color: var(--white-colour);
+  text-decoration: none;
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+.stream {
+  padding-top: 15rem;
+  margin-left: 6rem;
+}
+.topic {
+  padding-left: 1rem;
+  font-size: 4rem;
+  color: #fff;
+  font-family: var(--font-family);
+}
+.laptop {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main-topic {
+  font-size: 2.375rem;
+  color: rgb(52, 183, 175);
+}
+.side-topic {
+  font-size: 2.75rem;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.long {
+  padding: 1rem 3rem;
+  border-radius: 1.6rem;
+  border: none;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.sec-2 {
+  background-color: #0a121d;
+  height: 100vh;
+}
+.page-2 {
+  margin-left: 6rem;
+}
+.latest {
+  padding-top: 3rem;
+  color: #fff;
+  font-size: 2.5rem;
+}

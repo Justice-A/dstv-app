@@ -1,0 +1,178 @@
+main {
+  margin-top: 90px;
+  background-image: url(../images/background-picture.jpg);
+  height: 100%;
+  width: 100%;
+}
+
+/* header-section */
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.news-header {
+  /* background-image: url(../images/background-picture.jpg);
+  height: 100%;
+  width: 100%; */
+  color: var(--white-colour);
+  font-family: var(--font-family);
+  padding-top: 60px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-bottom: 60px;
+}
+
+.header-holder {
+  /* text-align: left; */
+  padding: 10px;
+}
+
+.text-holder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: 1px pink solid; */
+}
+
+.header-texts {
+  /* border: 1px blue solid; */
+  width: 50%;
+  height: 100%;
+}
+
+.header-photo {
+  /* border: 1px green solid; */
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.header-links {
+  display: flex;
+  width: 500px;
+  max-width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: var(--font-s);
+  /* border: 1px yellow solid; */
+}
+
+.header-title {
+  font-size: var(--font-lg);
+  margin-bottom: 60px;
+}
+
+.header-title-2 {
+  font-size: var(--font-lg);
+  margin-bottom: 35px;
+}
+
+.header-date {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-size: var(--font-s);
+  margin-bottom: 35px;
+}
+
+.header-description {
+  font-size: var(--font-m);
+}
+
+/* grid */
+
+.news-grid {
+  /* background-color: rgba(12, 21, 36, 0); */
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+.grid-container {
+  /* border: 1px red solid; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  color: var(--white-colour);
+}
+
+.grid-container > div {
+  border: 1px rgb(78, 94, 107) solid;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12 {
+  background-color: rgba(22, 30, 41, 0.582);
+}
+
+.grid-text {
+  margin: 0 auto;
+  width: 90%;
+  font-size: var(--font-xs);
+  padding: 20px 20px;
+}
+
+.grid-p,
+.grid-h1 {
+  color: grey;
+}
+
+.grid-p:hover,
+.grid-h1:hover {
+  color: gray;
+}
+
+.grid-1:hover,
+.grid-2:hover,
+.grid-3:hover,
+.grid-4:hover,
+.grid-5:hover,
+.grid-6:hover,
+.grid-7:hover,
+.grid-8:hover,
+.grid-9:hover,
+.grid-10:hover,
+.grid-11:hover,
+.grid-12:hover {
+  background-color: var(--white-colour);
+  color: rgba(0, 0, 0, 0.849);
+}
+
+.grid-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.txt {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 756px) {
+  .text-holder {
+    flex-direction: column;
+    font-size: var(--font-xs);
+  }
+
+  .header-texts,
+  .header-photo,
+  .header-date {
+    width: 100%;
+  }
+}
