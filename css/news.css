@@ -85,7 +85,7 @@ img {
 /* grid */
 
 .news-grid {
-  background-color: rgba(12, 21, 36, 0.219);
+  /* background-color: rgba(12, 21, 36, 0); */
   font-family: var(--font-family);
   font-weight: 500;
 }
