@@ -34,14 +34,17 @@
 .btn-primary {
   background-color: var(--white-colour);
   color: var(--secondary-colour-3);
+  font-family: var(--font-family);
 }
 .btn-secondary {
   background-color: var(--secondary-colour-1);
   color: var(--white-colour);
   border: 1px solid var(--white-colour);
+  font-family: var(--font-family);
 }
 .btn--lg {
   padding: 0.7rem 3rem;
+  font-size: var(--font-m);
 }
 .btn--small {
   padding: 0.45rem 1.5rem;
