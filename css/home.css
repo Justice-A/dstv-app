@@ -45,6 +45,25 @@
   font-family: var(--font-family);
   font-weight: bold;
 }
+.slide-subtext {
+  /*CHANGE DIC NAME*/
+  font-size: var(--font-m);
+  color: var(--white-colour);
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+}
+.slide-text {
+  font-size: var(--font-m);
+  color: var(--white-colour);
+  font-family: var(--font-family);
+  font-weight: bold;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+}
 .slide-2 {
   background-image: url(../images/dstv_ng_more_channels_web_1920x1080.png);
   min-height: 100vh; /* Use min-height instead of fixed height */
@@ -119,9 +138,29 @@
 .slick-dots li.slick-active button {
   background-color: var(--secondary-colour-3);
 }
+@media (max-width: 480px) {
+  .slick-dots {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-main-text {
+    font-size: var(--font-lg);
+  }
+  .hero-subtext {
+    font-size: var(--font-s);
+  }
+  .slides-text {
+    font-size: var(--font-m);
+  }
+}
+
 @media (max-width: 768px) {
   .carousel-slider {
     flex-direction: column; /* Stack vertically on smaller screens */
+  }
+  .nav-grid {
+    display: block;
   }
 }
 .next-hero {
@@ -133,24 +172,21 @@
 .new-slider {
   width: 100%;
   overflow: hidden;
+  gap: 20px;
+  border-radius: 8px;
 }
-
-.new-slider .slide {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center; /* Centers content */
-  justify-content: center;
-  height: 260px; /* Consistent height */
-  width: 300px; /* Consistent width */
-  border-radius: 10px;
-  gap: 10px; /* Space between items */
+.slide {
+  border-radius: 8px;
+  position: relative;
 }
-
 .new-slider .slide img {
   width: 100%; /* Image should scale to slide size */
   height: auto; /* Keeps aspect ratio */
   object-fit: cover; /* Ensures image covers the space */
+  border-radius: 8px;
+  gap: 10px;
 }
+
 .heading-text {
   display: flex;
   flex-direction: row;
@@ -162,49 +198,82 @@
   .new-slider {
     flex-direction: column; /* Stack vertically on smaller screens */
   }
+  .heading-text {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .africa-magic-cards {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  font-family: var(--font-family);
+  gap: 20px; /* Adds spacing between cards */
+  padding: 20px; /* Adds space inside the container */
   margin-bottom: 90px;
-  background-color: rgb(35, 44, 56);
+}
+
+.africa-magic-cards > div {
+  /* Targets all cards inside */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+  overflow: hidden; /* Ensures child elements don't overflow */
+  padding: 10px; /* Adds inner spacing */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.africa-magic-cards > div:hover {
+  transform: translateY(-5px); /* Moves card slightly up on hover */
+}
+
+.card-image {
+  width: 100%; /* Makes image scale within card */
+  height: 180px; /* Consistent height for images */
+  object-fit: cover; /* Ensures images maintain aspect ratio and cover area */
+}
+.card-text {
+  background-color: rgba(21, 36, 58, 0.384);
+  padding: 10px;
+  font-family: var(--font-family);
 }
 .sub-heading {
   color: var(--white-colour);
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-.card-1 {
-}
-.card-1:hover {
-  color: var(--white-colour);
+  align-items: center;
+  gap: 10px; /* Spacing between elements */
+  margin: 10px 0; /* Spacing above and below */
 }
 
-.card-image {
-  width: 300px;
-}
-.card-image:hover {
-  transform: scale(1.05);
-}
 .bold-text {
   font-size: var(--font-m);
-  font-family: var(--font-family);
   font-weight: bold;
   color: var(--white-colour);
+  margin: 5px 0;
 }
+
+.hero-subtext {
+  font-size: var(--font-sm);
+  color: var(--white-colour);
+  opacity: 0.8; /* Slightly faded text for description */
+}
+
+@media (max-width: 768px) {
+  .africa-magic-cards {
+    flex-direction: column; /* Stacks vertically on smaller screens */
+  }
+
+  .africa-magic-cards > div {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
 .section-text {
   font-size: var(--font-lg);
   color: var(--white-colour);
   font-family: var(--font-family);
   font-weight: 600;
 }
-@media (max-width: 768px) {
-  .africa-magic {
-    flex-direction: column; /* Stack vertically on smaller screens */
-  }
+.bold-text {
+  font-size: var(--font-m);
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var(--white-colour);
 }
 .packages-text {
   margin: 10px;
@@ -264,6 +333,10 @@
   .our-packages {
     flex-direction: column; /* Stack vertically on smaller screens */
   }
+  .packages-slider {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 /* Section styling */
 .local-entertainment {
@@ -322,18 +395,21 @@
 }
 .entertainment-showcase {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
   font-family: var(--font-family);
   margin-bottom: 90px;
-  background-color: rgb(35, 44, 56);
 }
+
 .showcase-cards {
   display: flex; /* Flexbox for row layout */
   flex-wrap: nowrap; /* Prevent wrapping to the next line */
-  gap: 10px; /* Add space between cards */
+  gap: 20px; /* Increase space between cards */
   overflow: hidden; /* Prevent scrollbars */
   width: 100%; /* Ensure it spans full width */
+  padding: 10px; /* Add padding to prevent cards from sticking */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
 .showcase-cards .slick-track {
@@ -343,6 +419,10 @@
 .showcase-cards .slick-slide {
   margin: 0 10px; /* Add spacing between slides */
   box-sizing: border-box; /* Include padding and borders in width */
+  padding: 10px; /* Add padding to separate content */
+  border: 1px solid rgba(21, 36, 58, 0.384); /* Optional: Add borders to visualize separation */
+  background-color: rgba(21, 36, 58, 0.384);
+  width: auto;
 }
 
 .slick-prev,
@@ -361,6 +441,7 @@
     flex-direction: column; /* Stack vertically on smaller screens */
   }
 }
+
 /* General Section Styles */
 .self-service {
   color: var(--white-colour);
@@ -454,6 +535,20 @@
   transition: color 0.3s;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid grey;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.bi-play {
+  color: var(--secondary-colour-2);
+}
+.bi-newspaper {
+  color: var(--secondary-colour-2);
+}
+
 /* Footer Bottom */
 .footer-bottom {
   display: flex;
@@ -505,13 +600,31 @@
   cursor: pointer;
 }
 
+.socials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button,
+input {
+  margin-bottom: 10px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
   .footer-container {
     flex-direction: column; /* Stack vertically on smaller screens */
   }
 
   .footer-icons {
     flex-wrap: wrap;
+  }
+  .socials-container {
+    flex-direction: column;
+    gap: 20px;
   }
 }
