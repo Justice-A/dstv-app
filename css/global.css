@@ -3,14 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   /*colours*/
   --white-colour: #fff;
   --dark-colour: rgb(2, 4, 7);
   --secondary-colour-1: rgb(10, 18, 29);
-  --secondary-colour-2: rgb(52, 183, 175);
+  --secondary-colour-2: rgb(42, 128, 221);
   --secondary-colour-3: rgb(22, 30, 41);
+  --paragraph-color: rgb(184, 189, 193);
   --secondary-colour-4: rgb(229, 182, 54);
 
   /*fonts*/
@@ -23,15 +23,15 @@
 }
 
 /*style rule for button */
-.btn {
+/* .btn {
   padding: 0.6rem 1rem;
   cursor: pointer;
   border: none;
   transition: all 300ms ease;
   outline: none;
   border-radius: 1.5rem;
-}
-.btn-primary {
+} */
+/* .btn-primary {
   background-color: var(--white-colour);
   color: var(--secondary-colour-3);
   font-family: var(--font-family);
@@ -88,11 +88,11 @@ body {
   font-family: var(--font-family);
   color: var(--white-colour);
 }
-
-.nav-logo .main-text {
+.main-text {
   font-size: var(--font-lg);
+  text-decoration: none;
+  color: var(--white-colour);
 }
-
 .nav-logo .sub-text {
   font-size: var(--font-s);
   display: block;
@@ -118,12 +118,12 @@ body {
   gap: 5px;
   cursor: pointer;
 }
-.main-menu li:hover {
-  background-color: var(--secondary-colour-2);
-}
 .main-menu li a {
   color: var(--white-colour);
   text-decoration: none;
+}
+.main-menu li a:hover {
+  color: var(--secondary-colour-2);
 }
 .nav-icons {
   display: flex;

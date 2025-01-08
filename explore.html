@@ -7,6 +7,10 @@
     <!-- links rule of my HTML -->
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
       integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
       crossorigin="anonymous"
@@ -20,36 +24,44 @@
     />
     <link rel="stylesheet" href="../css/explore.css" />
     <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <!-- body rule of my HTML -->
   <body>
     <nav>
-      <div class="navbar container">
-        <div class="nav-logo">
-          <span class="main-text"><a href="index.html">DStv</a></span>
-          <span class="sub-text">Nigeria</span>
-        </div>
-        <div class="nav-links">
-          <ul class="main-menu">
-            <li><a href="#">Watch</a></li>
-            <li><a href="explore.html">Explore</a></li>
-            <li><a href="#">Get</a></li>
-            <li><a href="#">Pay</a></li>
-            <li><a href="#">MyDStv</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">DStv Business</a></li>
-          </ul>
-        </div>
-        <div class="nav-icons">
-          <span class="search-icon"><i class="bi bi-search"></i></span>
-          <span class="flag-icon">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
-              alt="Nigerian Flag"
-              class="flag-icon"
-          /></span>
-          <span class="profile-icon"></span>
+      <div class="navbar">
+        <div class="nav-contents container">
+          <div class="nav-logo">
+            <span class="main-text">DStv</span>
+            <span cflass="sub-text">Nigeria</span>
+          </div>
+          <div class="nav-links">
+            <a href="index.html"></a>
+            <ul class="main-menu">
+              <span class="nav-grid"
+                ><i class="bi bi-grid-3x3-gap-fill"></i
+              ></span>
+              <li><a href="#">Watch</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="#">Get</a></li>
+              <li><a href="#">Pay</a></li>
+              <li><a href="#">MyDStv</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">DStv Business</a></li>
+            </ul>
+          </div>
+          <div class="nav-icons">
+            <span class="search-icon"><i class="bi bi-search"></i></span>
+            <span class="flag-icon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+                alt="Nigerian Flag"
+                class="flag-icon"
+            /></span>
+            <span class="profile-icon"><i class="bi bi-person"></i></span>
+            <span class="sign-in">Sign in</span>
+          </div>
         </div>
       </div>
     </nav>
@@ -57,7 +69,7 @@
       <!-- header rule of my HTML -->
       <div class="main-container">
         <div class="packages">
-          <h1 class="first-head">DStv Packages</h1>
+          <h1 class="first-head pack">DStv Packages</h1>
           <p>
             Whether you're after our Premium offering of sport, award-winning
             series and latest blockbuster movies, or want a more Compact
@@ -75,16 +87,100 @@
           <button class="btn btn-primary btn-lg">Compare Packages</button>
         </div>
         <!-- first images of my HTML -->
-        <div class="pictures">
-          <div class="images">
-            <div><img src="images/girl.jpg" alt="" /></div>
-            <div><img src="images/man.jpg" alt="" /></div>
-            <div><img src="images/pkg_card_-_compact.jpg" alt="" /></div>
-            <div><img src="images/pkg_card_-_family-confam.jpg" alt="" /></div>
-            <div><img src="images/pkg_card_-_access-yanga.jpg" alt="" /></div>
-            <div><img src="images/pkg_card_-_padi.jpg" alt="" /></div>
+        <section>
+          <div class="carousel-slider">
+            <div class="pictures">
+              <div class="images">
+                <div>
+                  <div class="head-text"><h2>Premium</h2></div>
+                  <img src="images/girl.jpg" alt="" />
+                  <div class="second">
+                    <h4>160+ channels</h4>
+                    <p>38 HD channels</p>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;37,000pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>Compact Plus</h2></div>
+                  <img src="images/man.jpg" alt="" />
+                  <div class="second">
+                    <h4>145+ channels</h4>
+                    <p>30 HD channels</p>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;25,000pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>Compact</h2></div>
+                  <img src="images/pkg_card_-_compact.jpg" alt="" />
+                  <div class="second">
+                    <h4>130+ channels</h4>
+                    <p>20 HD channels</p>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;15,700pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>Confam</h2></div>
+                  <img src="images/pkg_card_-_family-confam.jpg" alt="" />
+                  <div class="second">
+                    <h4>105+ channels</h4>
+                    <p>10 HD channels</p>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;9,300pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>Yanga</h2></div>
+                  <img src="images/pkg_card_-_access-yanga.jpg" alt="" />
+                  <div class="second">
+                    <h4>85+ channels</h4>
+                    <p>7 HD channels</p>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;5,100pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>Padi</h2></div>
+                  <img src="images/pkg_card_-_padi.jpg" alt="" />
+                  <div class="second">
+                    <h4>45+ channels</h4>
+                    <p>1 HD channels</p>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;3,600pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chevron chevron-right">&#10095;</div>
+            <div class="chevron chevron-left">&#10094;</div>
           </div>
-        </div>
+        </section>
         <!-- the body sturcture of my HTML -->
         <div class="packages">
           <h2 class="first-head">Add-On Packages</h2>
@@ -94,7 +190,262 @@
           </p>
           <button class="btn btn-primary btn-lg">Get Add-on Package</button>
         </div>
+        <section>
+          <div class="packages-slider">
+            <div class="pictures">
+              <div class="images">
+                <div>
+                  <div class="head-text">
+                    add
+                    <h2>movies</h2>
+                  </div>
+                  <img src="images/pkg_card_-_movieaddon.jpg" alt="" />
+                  <div class="second">
+                    <h4>3 Premium Movie channels</h4>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;2,500pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>French Plus</h2></div>
+                  <img src="images/pkg_card_-_franch-plus.jpg" alt="" />
+                  <div class="second">
+                    <h4>15+ channels</h4>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;20,500pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>French Touch</h2></div>
+                  <img src="images/pkg_card_-_franch-touch.jpg" alt="" />
+                  <div class="second">
+                    <h4>10+ channels</h4>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;5,800pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>Indian</h2></div>
+                  <img src="images/pkg-card-indian.png" alt="" />
+                  <div class="second">
+                    <h4>15+ channels</h4>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;12,400pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="head-text"><h2>Great Wall</h2></div>
+                  <img src="images/pkg_card_-_greatwall.jpg" alt="" />
+                  <div class="second">
+                    <h4>6+ channels</h4>
+                  </div>
+                  <div class="part-flex">
+                    <div><h2>&#8358;3,1250pm</h2></div>
+                    <div>
+                      <button class="btn-primary btn-sm">more info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chevron chevron-right">&#10095;</div>
+            <div class="chevron chevron-left">&#10094;</div>
+          </div>
+        </section>
+        <div class="packages">
+          <h2 class="first-head pack">How to get DStv</h2>
+          <p>
+            Not sure where to start in your journey to unlocking great
+            entertainment? Follow these steps...
+          </p>
+        </div>
+        <div class="flex-container">
+          <div class="dstv">
+            <img
+              class="dstv-step"
+              src="images/get-dstv-step-1-new-showmax.png"
+              alt=""
+            />
+            <h4>1. Choose a Package</h4>
+            <p>
+              Your first step on your entertainment journey is deciding which
+              DStv package will bring the content that you love, right to your
+              home.
+            </p>
+            <button class="btn btn-primary btn-lg btn-md">View Packages</button>
+          </div>
+          <div class="dstv">
+            <img
+              class="dstv-step"
+              src="images/get-dstv-step-2-choose-decoder.png"
+              alt=""
+            />
+            <h4>2. Pick your decder</h4>
+            <p>
+              Unlock the ability to pause live TV, record favourites and connect
+              to the internet with the Explora, or simply get watching with our
+              affordable HD decoder.
+            </p>
+            <button class="btn btn-primary btn-lg btn-md">View Decoder</button>
+          </div>
+          <div class="dstv">
+            <img
+              class="dstv-step"
+              src="images/get-dstv-step-3-find-installer.webp"
+              alt=""
+            />
+            <h4>3. Arrange Installation</h4>
+            <p>
+              Once you have explored the options and know what you want, use our
+              easy online tool to find the nearest dealer or installer that can
+              help you get connected.
+            </p>
+            <button class="btn btn-primary btn-lg btn-md">
+              Find InstallerorDealer
+            </button>
+          </div>
+          <div class="dstv">
+            <img
+              class="dstv-step"
+              src="images/get-dstv-step-4-enjoy-dstv.png"
+              alt=""
+            />
+            <h4>4. Enjoy your DStv</h4>
+            <p>
+              After one of our installers has helped you get setup, you'll be
+              ready to watch! Don't forget to download the MyDStv app to easily
+              manage your DStv.
+            </p>
+            <button class="btn btn-primary btn-lg btn-md">
+              Download The App
+            </button>
+          </div>
+        </div>
       </div>
+      <footer class="footer container">
+        <div class="footer-container">
+          <!-- Footer Columns -->
+          <div class="footer-column">
+            <h3>Watch</h3>
+            <ul>
+              <li><a href="#">Stream Live TV</a></li>
+              <li><a href="#">View your Watch List</a></li>
+              <li><a href="#">Showmax</a></li>
+              <li><a href="#">Rent a BoxOffice movie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Discover</h3>
+            <ul>
+              <li><a href="#">Browse the TV Guide</a></li>
+              <li><a href="#">What's Hot</a></li>
+              <li><a href="#">Explore SuperSport</a></li>
+              <li><a href="#">Latest News</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Buy</h3>
+            <ul>
+              <li><a href="#">Explore our Products</a></li>
+              <li><a href="#">Compare Packages</a></li>
+              <li><a href="#">View Decoders</a></li>
+              <li><a href="#">Find a Dealer or Installer</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Manage & Support</h3>
+            <ul>
+              <li><a href="#">Sign in to MyDStv</a></li>
+              <li><a href="#">Fix Errors Online</a></li>
+              <li><a href="#">Find out How to Pay</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Subscriber Ts & Cs</a></li>
+              <li><a href="#">Campaigns & Promotions</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Supplier Contracting</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div>
+            <button class="btn btn-primary btn-md">Get DStv</button>
+            <button class="btn btn-sec btn-md">Watch Now</button>
+          </div>
+          <div>
+            <p>Every moment, right at your fingertip.</p>
+            <p>Download your favourite DStv App.</p>
+          </div>
+          <div class="footer-icons">
+            <a href="#"
+              ><img src="./images/dstv-steam-logo.svg" alt="DSTV Stream"
+            /></a>
+            <a href="#"
+              ><img src="./images/mydstv-footer-icon.jpg" alt="My DSTV"
+            /></a>
+            <a href="#"
+              ><img src="./images/showmax-logo (1).png" alt="Showmax"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/supersport-footer-icon (1).jpg"
+                alt="SuperSport"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <div>
+            <a href="#"
+              ><img class="multichoice-icon" src="./images/img02.svg"
+            /></a>
+          </div>
+          <div class="column">
+            <div>
+              <a href="#">MultiChoice Website</a> |
+              <a href="#">Terms of Use</a> |
+              <a href="#">Privacy & Cookie Notice</a> |
+              <a href="#">Responsible Disclosure Policy</a> |
+              <a href="#">Copyright</a> | <a href="#">Careers</a> |
+              <a href="#">Manage Cookies</a>
+              <div class="socials-icon">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter-x"></i>
+              </div>
+            </div>
+            <div>
+              <p>©️ 2022 MultiChoice Africa Holdings BV. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- javascript links of my HTML -->
