@@ -15,8 +15,9 @@ $(document).ready(function () {
   // Second Slider
   $(".new-slider").slick({
     dots: true, // Enable navigation dots
-    arrows: true, // Hide navigation arrows
-    slidesToShow: 2, // Show 4 slides at once
+    infinite: false,
+    arrows: false, // Hide navigation arrows
+    slidesToShow: 4, // Show 4 slides at once
     slidesToScroll: 2, // Move 1 slide at a time
     autoplay: true,
     autoplaySpeed: 2000,

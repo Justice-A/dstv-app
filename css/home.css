@@ -139,6 +139,9 @@
   background-color: var(--secondary-colour-3);
 }
 @media (max-width: 480px) {
+  .chevron {
+    display: none; /* Hides the chevron */
+  }
   .slick-dots {
     bottom: 20px;
     left: 50%;
@@ -178,6 +181,8 @@
 .slide {
   border-radius: 8px;
   position: relative;
+  width: 260px;
+  height: auto;
 }
 .new-slider .slide img {
   width: 100%; /* Image should scale to slide size */
@@ -271,23 +276,22 @@
 }
 .bold-text {
   font-size: var(--font-m);
-  font-family: var(--font-family);
   font-weight: bold;
   color: var(--white-colour);
+  margin: 5px 0;
 }
 .packages-text {
   margin: 10px;
 }
 .packages-slider {
-  width: 100%;
-  overflow: hidden;
+  gap: 20px;
 }
 
 .slides {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .premium-text {
   position: absolute; /* Position over the image */
@@ -488,7 +492,7 @@
 
 @media (max-width: 480px) {
   .service-card {
-    width: 100%; /* One column for mobile screens */
+    width: 90%; /* One column for mobile screens */
   }
 }
 /* Footer Styles */
