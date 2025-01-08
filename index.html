@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dstv-app</title>
+    <title>DStv home</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,64 +14,685 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/global.css" />
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+  />
   </head>
   <body>
-  <nav>
-    <div class="navbar">
-      <div class="nav-contents container">
-       <div class="nav-logo">
-        <span class="main-text">DStv</span>
-        <span class="sub-text">Nigeria</span>
+    <nav>
+      <div class="navbar">
+        <div class="nav-contents container">
+         <div class="nav-logo">
+          <span class="main-text">DStv</span>
+          <span class="sub-text">Nigeria</span>
+         </div>
+         <div class="nav-links">
+          <ul class="main-menu">
+            <span class="nav-grid"><i class="bi bi-grid-3x3-gap-fill"></i></span>
+            <li><a href="#">Watch</a></li>
+            <li><a href="./explore.html">Explore</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="#">Pay</a></li>
+            <li><a href="./showmax.html">Showmax</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">DStv Business</a></li>
+          </ul>
+         </div>
+         <div class="nav-icons">
+          <span class="search-icon"><i class="bi bi-search"></i></span>
+          <span class="flag-icon">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+              alt="Nigerian Flag"
+              class="flag-icon"
+          /></span>
+          <span class="profile-icon"><i class="bi bi-person"></i></span>
+          <span class="sign-in">Sign in</span>
+         </div>
        </div>
-       <div class="nav-links">
-        <a href="index.html"><ul class="main-menu"></a>
-          <span class="nav-grid"><i class="bi bi-grid-3x3-gap-fill"></i></span>
-          <li><a href="#">Watch</a></li>
-          <li><a href="#">Explore</a></li>
-          <li><a href="#">Get</a></li>
-          <li><a href="#">Pay</a></li>
-          <li><a href="#">MyDStv</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">DStv Business</a></li>
-        </ul>
-       </div>
-       <div class="nav-icons">
-        <span class="search-icon"><i class="bi bi-search"></i></span>
-        <span class="flag-icon">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
-            alt="Nigerian Flag"
-            class="flag-icon"
-        /></span>
-        <span class="profile-icon"><i class="bi bi-person"></i></span>
-        <span class="sign-in">Sign in</span>
-       </div>
-     </div>
+      </div>
     </nav>
 
-    <!--<button class="btn btn-primary btn--lg">Watch Online</button>
-    <button class="btn btn-secondary btn--lg">About The Show</button>
-    <button class="btn btn-primary btn--small">Get DSTV</button>
-    <button class="btn btn-secondary btn--small">View More</button>--><!--
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script></script>-->
+    <main>
+      <section>
+      <div class="carousel-slider">
+       <div class="slide-1"> 
+        <div class="hero-text container">
+          <div class="hero-main-text">
+            <p>Your</p>
+            <p>Reasons</p>
+            <p>to be</p>
+            <p>Happy</p>
+          </div>
+          <div class="hero-subtext">
+            <p>Enjoy Naija dramas, football & more smiles</p>
+            <p>this holiday season</p>
+          </div>
+          <div><button class="btn btn-primary btn--lg">Stay Connected</button></div>
+         </div>  
+        </div>
+        <div class="slide-2">
+          <div class="hero-text container">
+            <div class="slides-text">
+              <p>Festive Suprises</p>
+              <p>Await with DStv's</p>
+              <p>Open Window</p>
+            </div>
+            <div class="hero-subtext">
+              <p>Extra entertainment, open to you</p>
+              <p>for a limited time - because you</p>
+              <p>deseve more joy this season!</p>
+            </div>
+            <div><button class="btn btn-primary btn--lg">Stay Connected</button></div>
+           </div>
+          
+        </div>
+        <div class="slide-3">
+          <div class="hero-text container">
+            <div class="slides-text">
+              <p>Get your ticket to the</p>
+              <p>greatest football in the</p>
+              <p>world!</p>
+            </div>
+            <div class="hero-subtext">
+              <p>Stay connected or upgrade your DStv package!</p>
+            </div>
+            <div><button class="btn btn-secondary btn--lg">Stay Connected</button></div>
+           </div>
+          
+        </div>
+        <div class="slide-4">
+          <div class="hero-text container">
+            <div class="bold-subtext">
+              Discover the All-New MyDStv App
+            </div>
+            <div class="slides-text">
+              <p>The New MyDStv </p>
+              <p>App is here!</p>
+            </div>
+            <div class="hero-subtext">
+              <div class="bold-subtext">Available features✅</div>
+              <p>Payments</p>
+              <p>Manage my accounts</p>
+              <p>Update Details</p>
+              <p>Offers for you</p>
+              <div class="bold-subtext">Live Chats❇️</div>
+            </div>
+            <div><button class="btn btn-secondary btn--lg">Learn More</button></div>
+           </div>
+          
+        </div>
+      </div>
+       
+    </section>
+    <section class="next-hero container">
+      <div class="new-slider">
+        <div class="slide">
+          <img src="./images/promo-card-new-ss.png" alt="promo-card" />
+          <p class="slide-subtext">Introducing the new</p>
+          <p class="slide-text">MyDStv Website</p>
+        </div>
+
+        <div class="slide">
+          <img src="./images/dstv-stream_480x480.jpg" alt="generic-dstv" />
+          <p class="slide-text">DStv Stream</p>
+        </div>
+
+        <div class="slide">
+          <img src="./images/cheta-m_480x480.jpg" alt="yellowstone" />
+          <p class="slide-text">Showmax ATB</p>
+        </div>
+
+        <div class="slide">
+          <img src="./images/dstv-for-business_480x480.jpg" alt="dstv-business" />
+          <p class="slide-text">DStv for Business</p>
+        </div>
+
+        <div class="slide">
+          <img src="./images/it-ends-with-us_480x480.jpg" alt="box-office" />
+          <p class="slide-text">Box office</p>
+        </div>
+      </div>
+
+    </section>
+    <section class="africa-magic container">
+      <div class="heading-text">
+        <div class="section-text">
+          <p>Africa Magic</p>
+        </div>
+        <div class="button"><button class="btn btn-secondary btn--lg">View More</button></div>
+      </div>
+      <div class="africa-magic-cards">
+        <div class="card-1">
+          <img src="./images/1734948278-27_OP_Africa_Magic_AMVCA_11_CTE_Web_Assets_Press_Release_1600_x_914.webp" alt="press-release" class="card-image"/>
+          <div class="card-text">
+            <div class="sub-heading">
+              <i class="bi bi-play"></i>
+              <p>News</p>
+              <p>23 December 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>AMVCA:Organizers</p>
+              <p>Announce Call to Entr...</p>
+            </div>
+            <div class="hero-subtext">
+              <p>Entries open on Monday,</p>
+              <p>23 December 2024 and</p>
+              <p>close on Friday, 31...</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-2">
+          <img src="./images/1734941436-27_RHOLagos_S3_Article_1040_x_629___Pre_Launch.webp" alt="incredible-housewives" class="card-image" />
+          <div class="card-text">
+            <div class="sub-heading">
+              <i class="bi bi-newspaper"></i>
+              <p>News</p>
+              <p>23 December 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>The Real Housewives of</p>
+              <p>Lagos returns for an...</p>
+            </div>
+            <div class="hero-subtext">
+              <p>From dazzling parties to</p>
+              <p>emotional</p>
+              <p>breakthroughs to...</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-3">
+          <img src="./images/1734613834-27_maxresdefault.webp" alt="grave-end" class="card-image"/>
+          <div class="card-text">
+            <div class="sub-heading">
+              <i class="bi bi-play"></i>
+              <p>videos</p>
+              <p>20 December 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>A grave end - 10th</p>
+              <p>Avenue</p>
+            </div>
+            <div class="hero-subtext">
+              <p>Buchi's attempt to</p>
+              <p>blackmail Felix takes a</p>
+              <p>deadly turn, ending wit...</p>
+            </div>
+          </div>
+        </div>
+        <dizv class="card-4">
+          <img src="./images/1734613830-27_maxresdefault.webp" alt="omera" class="card-image" />
+          <div class="card-text">
+            <div class="sub-heading">
+              <i class="bi bi-play"></i>
+              <p>videos</p><p>20 December 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>Chaos at the wedding -</p>
+              <p>Omera</p>
+            </div>
+            <div class="hero-subtext">
+              <p>Prince Ameh's refusal to</p>
+              <p>marry chief Alewo's</p>
+              <p>daughter in favour of a...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-packages container">
+      <div class="packages-text">
+        <div class="section-text">
+          Our Packages
+        </div>
+        <div class="hero-subtext">
+          <p>DStv offers a wide range of packages to suit your needs. Get the best in sport, latest international movies, series, reality shows, kids,</p>
+          <p>entertainment, lifestyle and news.</p>
+        </div>
+        <div class="button">
+          <button class="btn btn-secondary btn--lg">Compare Packages</button>
+        </div>
+      </div>
+      <div class="packages-slider">
+        <div class="slides">
+          <img src="./images/pkg_card_-_premium (1).jpg" alt="premium-card" class="card-style"/>
+          <div class="premium-text">
+            <div class="section-text">
+              <p>Premium</p>
+            </div>
+            <div>
+             <div class="bold-text">
+               <p>160+ channels</p>
+             </div>
+             <div class="hero-subtext">
+               <p>38 HD channels</p>
+             </div>
+            </div>
+            <div class="sub-heading">
+              <div class="section-text">
+                <p>&#8358;37,000</p>
+              </div>
+              <button class="btn btn-primary btn--small">More info</button>
+            </div>
+          </div>
+        </div>
+        <div class="slides">
+          <img src="./images/pkg_card_-_compactplus.jpg" alt="compact-plus" class="card-style"/>
+          <div class="premium-text">
+            <div class="section-text">
+              <p>Compact Plus</p>
+            </div>
+            <div>
+             <div class="bold-text">
+               <p>145+ channels</p>
+             </div>
+             <div class="hero-subtext">
+               <p>30 HD channels</p>
+             </div>
+            </div>
+            <div class="sub-heading">
+              <div class="section-text">
+                <p>&#8358;25,000</p>
+              </div>
+              <button class="btn btn-primary btn--small">More info</button>
+            </div>
+          </div>
+        </div>
+        <div class="slides">
+          <img src="./images/pkg_card_-_compact.jpg" alt="compact-plus" class="card-style"/>
+          <div class="premium-text">
+            <div class="section-text">
+              <p>Compact Plus</p>
+            </div>
+            <div>
+             <div class="bold-text">
+               <p>130+ channels</p>
+             </div>
+             <div class="hero-subtext">
+               <p>20 HD channels</p>
+             </div>
+            </div>
+            <div class="sub-heading">
+              <div class="section-text">
+                <p>&#8358;15,700</p>
+              </div>
+              <button class="btn btn-primary btn--small">More info</button>
+            </div>
+          </div>
+        </div>
+        <div class="slides">
+          <img src="./images/pkg_card_-_family-confam (1).jpg" alt="compact-plus" class="card-style"/>
+          <div class="premium-text">
+            <div class="section-text">
+              <p>Confam</p>
+            </div>
+            <div>
+             <div class="bold-text">
+               <p>105+ channels</p>
+             </div>
+             <div class="hero-subtext">
+               <p>10 HD channels</p>
+             </div>
+            </div>
+            <div class="sub-heading">
+              <div class="section-text">
+                <p>&#8358;9,300</p>
+              </div>
+              <button class="btn btn-primary btn--small">More info</button>
+            </div>
+          </div>
+        </div>
+        <div class="slides">
+          <img src="./images/pkg_card_-_access-yanga.jpg" alt="compact-plus" class="card-style"/>
+          <div class="premium-text">
+            <div class="section-text">
+              <p>Yanga</p>
+            </div>
+            <div>
+             <div class="bold-text">
+               <p>85+ channels</p>
+             </div>
+             <div class="hero-subtext">
+               <p>7 HD channels</p>
+             </div>
+            </div>
+            <div class="sub-heading">
+              <div class="section-text">
+                <p>&#8358;5,100</p>
+              </div>
+              <button class="btn btn-primary btn--small">More info</button>
+            </div>
+          </div>
+        </div>
+        <div class="slides">
+          <img src="./images/pkg_card_-_padi.jpg" alt="compact-plus" class="card-style"/>
+          <div class="premium-text">
+            <div class="section-text">
+              <p>Padi</p>
+            </div>
+            <div>
+             <div class="bold-text">
+               <p>45+ channels</p>
+             </div>
+             <div class="hero-subtext">
+               <p>1 HD channels</p>
+             </div>
+            </div>
+            <div class="sub-heading">
+              <div class="section-text">
+                <p>&#8358;3,600</p>
+              </div>
+              <button class="btn btn-primary btn--small">More info</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="local-entertainment">
+      <div class="logo-container container">
+        <h2>Bringing the best local entertainment</h2>
+        <div class="channels">
+          <div class="channel">
+            <img src="./images/251-nta-i.png" alt="NTA Logo">
+          </div>
+          <div class="channel">
+            <img src="./images/252-silverbird-light.png" alt="Silverbird Logo">
+          </div>
+          <div class="channel">
+            <img src="./images/253-ait.png" alt="AIT Logo">
+          </div>
+          <div class="channel">
+            <img src="./images/256-lagos-tv.png" alt="LVS Logo">
+          </div>
+          <div class="channel">
+            <img src="./images/259-wazobia-max.png" alt="wazobia Logo">
+          </div>
+          <div class="channel">
+            <img src="./images/259-ogtv.png" alt="OGtv">
+          </div>
+          <div class="channel">
+            <img src="./images/261-arewa24.png" alt="Arewa">
+          </div>
+          <div class="channel">
+            <img src="./images/262-wap-tv.png" alt="WAPtv">
+          </div>
+          <div class="channel">
+            <img src="./images/275-k24.png" alt="k24">
+          </div>
+          <div class="channel">
+            <img src="./images/microsoftteams-image-1.png" alt="WASAFItv">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="entertainment-showcase container">
+      <div class="heading-text">
+        <div class="section-text">
+          <p>Entertainment Showcase</p>
+        </div>
+        <div class="button"><button class="btn btn-secondary btn--lg">New</button></div>
+      </div>
+      <div class="showcase-cards">
+        <div class="card-1">
+          <img src="./images/article_dstv-nigeria-festive.jpg" alt="DStv-festive" class="card-image" />
+          <div class="card-1-text">
+            <div class="sub-heading">
+              <i class="bi bi-newspaper"></i>
+              <p>News</p>
+              <p>26 Novemeber 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>Find your reasons to be</p>
+              <p>happy this season wit...</p>
+            </div>
+            <div class="hero-subtext">
+              <p>From gripping dramas</p>
+              <p>and live sports to festive</p>
+              <p>movie nights, there's...</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-2">
+          <img src="./images/article-team-saraya-returns-to-national-geographic_1920x1080.webp" alt="team-saraya" class="card-image" />
+          <div class="card-2-text">
+            <div class="sub-heading">
+              <i class="bi bi-newspaper"></i>
+              <p>News</p>
+              <p>18 November 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>Team Sayari Returns to</p>
+              <p>National Geographic...</p>
+            </div>
+            <div class="hero-subtext">
+              <p>The series inspires</p>
+              <p>young viewers across</p>
+              <p>Africa to embrace...</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-3">
+          <img src="./images/article-pearl-thusi-takes-the-hot-seat-in-the-comedy-central-roast_1920x1080.jpg" alt="hot-seat" class="card-image"/>
+          <div class="card-3-text">
+            <div class="sub-heading">
+              <i class="bi bi-newspaper"></i>
+              <p>News</p>
+              <p>15 November 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>Pearl Thusi takes the</p>
+              <p>Hot seat in the Comed...</p>
+            </div>
+            <div class="hero-subtext">
+              <p>Catch the Comedy</p>
+              <p>Central Roast of Pearl</p>
+              <p>Thusi for an evening of...</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-4">
+          <img src="./images/dstv_african-stars-shine-bright.webp" alt="african-stars" class="card-image" />
+          <div class="card-4-text">
+            <div class="sub-heading">
+              <i class="bi bi-newspaper"></i>
+              <p>News</p>
+              <p>06 November 2024</p>
+            </div>
+            <div class="bold-text">
+              <p>African Stars Shine</p>
+              <p>Bright in 2024 MTV ME...</p>
+            </div>
+            <div class="hero-subtext">
+              <p>With a stellar host,</p>
+              <p>incredible performers,</p>
+              <p>and African artists...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--<section class="self-service container">
+      <div class="section-text">
+        Self Service
+      </div>
+      <div class="hero-subtext">
+        <p>Take control, Stay Connected - manage your DStv account on your terms. Select an option below to get started.</p>
+      </div>
+    </section>-->
+      <section class="self-service container">
+        <div class="section-text">
+          Self Service
+        </div>
+        <div class="hero-subtext">
+          <p>Take control, Stay Connected - manage your DStv account on your terms. Select an option below to get started.</p>
+        </div>
+        <div class="service-flex container">
+          <div class="service-card">
+            <i class="bi bi-emoji-smile"></i>
+            <p>New to DStv</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-wallet2"></i>
+            <p>Make Payment</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-exclamation-triangle"></i>
+            <p>Fix Decoder Errors</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-coin"></i>
+            <p>How to Pay</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-basket2"></i>
+            <p>Packages & Devices</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-person-gear"></i>
+            <p>Manage Account</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-geo-alt"></i>
+            <p>Find Installer</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-arrow-clockwise"></i>
+            <p>Upgrade/Downgrade</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-telephone"></i>
+            <p>Get In Touch</p>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-list-ul"></i>
+            <p>Discover More</p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer container">
+        <div class="footer-container">
+          <!-- Footer Columns -->
+          <div class="footer-column">
+            <h3>Watch</h3>
+            <ul>
+              <li><a href="#">Stream Live TV</a></li>
+              <li><a href="#">View your Watch List</a></li>
+              <li><a href="#">Showmax</a></li>
+              <li><a href="#">Rent a BoxOffice movie</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Discover</h3>
+            <ul>
+              <li><a href="#">Browse the TV Guide</a></li>
+              <li><a href="#">What's Hot</a></li>
+              <li><a href="#">Explore SuperSport</a></li>
+              <li><a href="#">Latest News</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Buy</h3>
+            <ul>
+              <li><a href="#">Explore our Products</a></li>
+              <li><a href="#">Compare Packages</a></li>
+              <li><a href="#">View Decoders</a></li>
+              <li><a href="#">Find a Dealer or Installer</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Manage & Support</h3>
+            <ul>
+              <li><a href="#">Sign in to MyDStv</a></li>
+              <li><a href="#">Fix Errors Online</a></li>
+              <li><a href="#">Find out How to Pay</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Subscriber Ts & Cs</a></li>
+              <li><a href="#">Campaigns & Promotions</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Supplier Contracting</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-line">
+          <hr/>
+        </div>
+      
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="footer-buttons">
+            <div class="btn btn-primary btn--lg">Get DStv</div>
+            <div class="btn btn-secondary btn--lg">Watch Now</div>
+          </div>
+          <div>
+            <p>Every moment, right at your fingertip.</p>
+            <p>Download your favourite DStv App.</p>
+          </div>
+          <div class="footer-icons">
+            <a href="#"><img src="./images/dstv-steam-logo.svg" alt="DSTV Stream"></a>
+            <a href="#"><img src="./images/mydstv-footer-icon.jpg" alt="My DSTV"></a>
+            <a href="#"><img src="./images/showmax-logo (1).png" alt="Showmax"></a>
+            <a href="#"><img src="./images/supersport-footer-icon (1).jpg" alt="SuperSport"></a>
+          </div>
+        </div>
+      
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <div class="multichoice-icon">
+            <a href="#"><img src="./images/img02.svg"></a>
+          </div>
+          <div class="footer-column">
+            <div>
+              <a href="#">MultiChoice Website</a> 
+              <a href="#">Terms of Use</a> 
+              <a href="#">Privacy & Cookie Notice</a> 
+              <a href="#">Responsible Disclosure Policy</a> 
+              <a href="#">Copyright</a> 
+              <a href="#">Careers</a>
+              <a href="#">Manage Cookies</a>
+              
+           </div>
+           <div class="socials-container">
+              <p>© 2022 MultiChoice Africa Holdings BV. All rights reserved</p>
+              <div class="socials-icon">
+               <a href="https://www.facebook.com" target="_blank" ><i class="bi bi-facebook"></i></a>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+              </div>
+           </div>
+         </div>
+        </div>
+      </footer>
+      
+      
+      
+    
+    
+
+      <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="./js/slider-home.js"></script>
+    </main>
   </body>
 </html>
