@@ -71,4 +71,7 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".hamburger").click(function () {
+    $(".side-bar").toggle();
+  });
 });

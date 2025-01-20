@@ -39,9 +39,10 @@ $(document).ready(function () {
 
   // Third Slider
   $(".packages-slider").slick({
+    Infinite: false,
     dots: true,
     arrows: true,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,

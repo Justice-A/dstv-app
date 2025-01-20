@@ -284,7 +284,11 @@
   margin: 10px;
 }
 .packages-slider {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  padding: 10px;
+  margin: auto;
 }
 
 .slides {
@@ -292,6 +296,7 @@
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
+  gap: 20px;
 }
 .premium-text {
   position: absolute; /* Position over the image */
@@ -333,11 +338,16 @@
   width: 350px;
   border-radius: 5px;
 }
+
 @media (max-width: 768px) {
   .our-packages {
     flex-direction: column; /* Stack vertically on smaller screens */
   }
   .packages-slider {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .showcase-cards {
     flex-direction: column;
     gap: 20px;
   }
@@ -424,15 +434,15 @@
   margin: 0 10px; /* Add spacing between slides */
   box-sizing: border-box; /* Include padding and borders in width */
   padding: 10px; /* Add padding to separate content */
-  border: 1px solid rgba(21, 36, 58, 0.384); /* Optional: Add borders to visualize separation */
   background-color: rgba(21, 36, 58, 0.384);
   width: auto;
 }
 
 .slick-prev,
 .slick-next {
-  font-size: 20px;
-  color: white;
+  font-size: var(--font-s);
+  color: var(--white-colour);
+  background-color: var(--secondary-colour-3);
   z-index: 1;
 }
 
@@ -443,6 +453,10 @@
 @media (max-width: 768px) {
   .entertainment-showcase {
     flex-direction: column; /* Stack vertically on smaller screens */
+  }
+  .showcase-cards {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -627,8 +641,16 @@ input {
   .footer-icons {
     flex-wrap: wrap;
   }
-  .socials-container {
+  .footer-links {
     flex-direction: column;
     gap: 20px;
+  }
+  .socials-icon {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .socials-container {
+    flex-direction: column;
+    gap: 10px;
   }
 }
