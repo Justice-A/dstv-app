@@ -234,7 +234,6 @@ body {
     flex-direction: row;
   }
   .side-bar {
-    display: block;
     flex-direction: column;
   }
   .hamburger {
