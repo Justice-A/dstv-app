@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .carousel-slider {
   margin-top: 90px;
   position: relative;
@@ -282,13 +286,6 @@
 }
 .packages-text {
   margin: 10px;
-}
-.packages-slider {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-  margin: auto;
 }
 
 .slides {

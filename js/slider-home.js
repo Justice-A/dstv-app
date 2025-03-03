@@ -10,6 +10,15 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
     nextArrow: '<div class="chevron chevron-right">&#10095;</div>',
     prevArrow: '<div class="chevron chevron-left">&#10094;</div>',
+    responsive: [
+      {
+        breakpoint: 480, // Mobile
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   // Second Slider
@@ -40,8 +49,8 @@ $(document).ready(function () {
   // Third Slider
   $(".packages-slider").slick({
     dots: true,
-    arrows: true,
-    slidesToShow: 4,
+    arrows: false,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
