@@ -50,12 +50,20 @@ $(document).ready(function () {
   $(".packages-slider").slick({
     dots: true,
     arrows: false,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     nextArrow: '<div class="chevron chevron-right">&#10095;</div>',
     prevArrow: '<div class="chevron chevron-left">&#10094;</div>',
+    responsive: [
+      {
+        breakpoint: 480, // Mobile
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   // Showcase Cards Slider
